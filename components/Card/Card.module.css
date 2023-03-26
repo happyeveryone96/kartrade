@@ -1,5 +1,5 @@
 .container {
-  width: 40vw;
+  width: 25vw;
   min-width: 375px;
   background-color: white;
   border-bottom: 1px solid #d8d8d8;
@@ -29,9 +29,6 @@
   align-items: center;
   color: black;
   margin: 0 20px;
-}
-
-.descriptionBox {
 }
 
 .title {
