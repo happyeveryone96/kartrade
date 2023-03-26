@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+  min-width: 375px;
+  height: 80px;
+  padding: 0 25px;
+  background-color: rgb(var(--foreground-rgb));
+}
+
+.rightBox {
+  position: absolute;
+  right: 0;
+  margin: 25px;
+}
+
+.search {
+  margin: 0 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
