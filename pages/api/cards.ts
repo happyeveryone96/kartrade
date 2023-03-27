@@ -1,17 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { CardType } from '@/types/card';
 
-type CardData = {
-  id: number;
-  mainImage: string;
-  title: string;
-  description: string;
-  price: number;
-  detailImage: string[];
-  nickname: string;
-};
-
-const dummyCardInfo: CardData[] = [
+const dummyCardInfo: CardType[] = [
   {
     id: 1,
     mainImage: '/public/photocard/photo1.svg',
@@ -124,7 +115,7 @@ const dummyCardInfo: CardData[] = [
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<CardData[]>
+  res: NextApiResponse<CardType[]>
 ) {
   res.status(200).json(dummyCardInfo);
 }

@@ -4,9 +4,12 @@ import PhotoCard from '../../public/photocard/photo1.svg';
 import css from '../Card/Card.module.css';
 import { CardType } from '@/types/card';
 
-function Card(card: any) {
-  const cardInfo: CardType = card.card;
-  const { mainImage, nickname, title, description, price } = cardInfo;
+interface Props {
+  card: CardType;
+}
+
+const Card: React.FC<Props> = ({card}) => {
+  const { mainImage, nickname, title, description, price } = card;
 
   return (
     <div className={css.container}>
