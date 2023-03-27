@@ -2,9 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import PhotoCard from '../../public/photocard/photo1.svg';
 import css from '../Card/Card.module.css';
+import { CardType } from '@/types/card';
 
 function Card(card: any) {
-  const { mainImage, nickname, title, description, price } = card.card;
+  const cardInfo: CardType = card.card;
+  const { mainImage, nickname, title, description, price } = cardInfo;
 
   return (
     <div className={css.container}>
