@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.quantity {
+  font-weight: 500;
+  line-height: 34px;
+  color: #515151;
+  margin-right: 45px;
+}
+
+.minus {
+  margin: 0 22px;
+  cursor: pointer;
+}
+
+.plus {
+  margin: 0 22px;
+  cursor: pointer;
+}

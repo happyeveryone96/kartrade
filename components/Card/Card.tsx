@@ -2,14 +2,18 @@ import React from 'react';
 import Image from 'next/image';
 import css from '../Card/Card.module.css';
 import { CardType } from '@/types/card';
+import { useRouter } from 'next/router';
+import UserBox from '../UserBox/UserBox';
 
 interface Props {
   card: CardType;
 }
 
 const Card: React.FC<Props> = ({ card }) => {
-  const { mainImage, nickname, title, description, price } = card;
+  const { mainImage, nickname, title, description, price, id } = card;
   const photoCard = mainImage.replace('/public', '');
+
+  const router = useRouter();
 
   return (
     <div className={css.container}>
@@ -19,17 +23,13 @@ const Card: React.FC<Props> = ({ card }) => {
         alt="사진"
         width={400}
         height={400}
+        onClick={() =>
+          router.push({
+            pathname: `/card/${id}`,
+          })
+        }
       />
-      <div className={css.userBox}>
-        <Image
-          className={css.userImg}
-          src={photoCard}
-          alt="유저 프로필 사진"
-          width={38}
-          height={38}
-        />
-        <p className={css.userName}>@{nickname}</p>
-      </div>
+      <UserBox props={{ userImg: photoCard, userName: nickname }} />
       <div>
         <p className={css.title}>{title}</p>
         <p className={css.desc}>{description}</p>

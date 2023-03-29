@@ -1,0 +1,38 @@
+.userBox {
+  width: var(--user-width);
+  min-width: var(--user-min-width);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17.56px;
+  padding-bottom: 15px;
+  border-bottom: var(--border);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.userImg {
+  border-radius: 38px;
+}
+
+.userName {
+  display: flex;
+  align-items: center;
+  color: #515151;
+  margin: 0 20px;
+}
+
+.messageBox {
+  display: flex;
+  margin-top: 17.56px;
+  padding-bottom: 15px;
+}
+
+.messageImg {
+  margin: 0 7.57px;
+}
+.messageText {
+  color: #515151;
+}
