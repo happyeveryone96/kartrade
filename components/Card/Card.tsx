@@ -17,8 +17,8 @@ const Card: React.FC<Props> = ({ card }) => {
         className={css.cardImg}
         src={photoCard}
         alt="사진"
-        width={325}
-        height={325}
+        width={400}
+        height={400}
       />
       <div className={css.userBox}>
         <Image

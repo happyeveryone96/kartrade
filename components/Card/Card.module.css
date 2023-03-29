@@ -1,13 +1,14 @@
 .container {
-  width: 25vw;
-  min-width: 375px;
+  width: var(--main-width);
+  min-width: var(--min-width);
   background-color: white;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: var(--border);
   padding: 30px;
 }
 
 .cardImg {
   width: 100%;
+  cursor: pointer;
   vertical-align: middle;
 }
 
@@ -15,7 +16,7 @@
   display: flex;
   margin-top: 17.56px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: var(--border);
 }
 
 .userImg {
@@ -30,25 +31,22 @@
 }
 
 .title {
-  color: black;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0em;
+  color: var(--black);
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-line-height);
   margin-top: 27px;
 }
 
 .desc {
-  color: #777777;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0em;
+  color: var(--desc-color);
+  font-size: var(--desc-font-size);
+  line-height: var(--desc-line-height);
 }
 
 .price {
-  color: black;
-  font-size: 22px;
-  line-height: 34px;
-  letter-spacing: 0em;
+  color: var(--black);
+  font-size: var(--price-font-size);
+  line-height: var(--price-line-height);
   margin-top: 9.75px;
 }

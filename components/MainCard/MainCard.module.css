@@ -1,8 +1,8 @@
 .container {
-  width: 25vw;
-  min-width: 375px;
+  width: var(--main-width);
+  min-width: var(--min-width);
   background-color: white;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: var(--border);
   padding: 30px;
 }
 
@@ -33,14 +33,17 @@
 
 .title {
   width: 230px;
+  font-weight: 500;
   position: absolute;
   top: 140px;
   font-size: 35px;
   line-height: 35px;
+  color: #ffffff;
 }
 
 .desc {
   position: absolute;
   top: 220px;
   line-height: 22px;
+  color: #e1e1e1;
 }

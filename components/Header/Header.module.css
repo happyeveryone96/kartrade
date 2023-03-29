@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30vw;
-  min-width: 375px;
+  width: var(--main-width);
+  min-width: var(--min-width);
   height: 80px;
   padding: 0 25px;
   background-color: rgb(var(--foreground-rgb));
