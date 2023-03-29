@@ -4,11 +4,14 @@ import Menu from '../../public/icons/menu.png';
 import Search from '../../public/icons/search.png';
 import Image from 'next/image';
 import css from './Header.module.css';
+import Link from 'next/link';
 
 function Header() {
   return (
     <div className={css.container}>
-      <Image className={css.icon} src={Icon} alt="메인 아이콘" />
+      <Link href="/">
+        <Image className={css.icon} src={Icon} alt="메인 아이콘" />
+      </Link>
       <div className={css.rightBox}>
         <Image
           className={`${css.icon} ${css.search}`}

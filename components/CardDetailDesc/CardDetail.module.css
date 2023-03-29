@@ -1,0 +1,33 @@
+.container {
+  width: var(--main-width);
+  min-width: var(--min-width);
+  background-color: white;
+  border-bottom: var(--border);
+  padding: 30px;
+}
+
+.title {
+  font-size: var(--detail-title-font-size);
+  line-height: var(--detail-title-line-height);
+  font-weight: var(--title-font-weight);
+  margin-bottom: 30px;
+}
+
+.description {
+  color: var(--desc-color);
+  line-height: var(--detail-desc-line-height);
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  margin-top: 30px;
+}
+
+.priceDesc {
+  color: var(--desc-color);
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 28px;
+}

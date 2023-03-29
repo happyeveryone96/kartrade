@@ -12,24 +12,6 @@
   vertical-align: middle;
 }
 
-.userBox {
-  display: flex;
-  margin-top: 17.56px;
-  padding-bottom: 15px;
-  border-bottom: var(--border);
-}
-
-.userImg {
-  border-radius: 38px;
-}
-
-.userName {
-  display: flex;
-  align-items: center;
-  color: black;
-  margin: 0 20px;
-}
-
 .title {
   color: var(--black);
   font-size: var(--title-font-size);
