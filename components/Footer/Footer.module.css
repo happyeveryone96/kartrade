@@ -1,0 +1,21 @@
+.container {
+  width: var(--main-width);
+  min-width: var(--min-width);
+  color: var(--black);
+}
+
+.logo {
+  margin: 35px 25px;
+}
+
+.footerBox {
+  font-size: 12px;
+  line-height: 34px;
+  margin: 0 25px 18.65px;
+}
+
+.copyRight {
+  font-size: 10px;
+  line-height: 34px;
+  margin: 0 25px 25.76px;
+}

@@ -1,0 +1,34 @@
+.container {
+  width: var(--main-width);
+  min-width: var(--min-width);
+  background-color: white;
+  border-bottom: var(--border);
+  padding: 30px;
+}
+
+.cardImg {
+  width: 100%;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.title {
+  color: var(--black);
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-line-height);
+  margin-top: 27px;
+}
+
+.desc {
+  color: var(--desc-color);
+  font-size: var(--desc-font-size);
+  line-height: var(--desc-line-height);
+}
+
+.price {
+  color: var(--black);
+  font-size: var(--price-font-size);
+  line-height: var(--price-line-height);
+  margin-top: 9.75px;
+}

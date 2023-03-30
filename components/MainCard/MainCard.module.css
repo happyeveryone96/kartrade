@@ -1,0 +1,49 @@
+.container {
+  width: var(--main-width);
+  min-width: var(--min-width);
+  background-color: white;
+  border-bottom: var(--border);
+  padding: 30px;
+}
+
+.cardBox {
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mainImg {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  min-width: 280px;
+  transform: translate(-50%, -50%);
+  word-break: break-all;
+}
+
+.title {
+  width: 230px;
+  font-weight: 500;
+  position: absolute;
+  top: 140px;
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.desc {
+  position: absolute;
+  top: 220px;
+  line-height: 22px;
+  color: #e1e1e1;
+}
