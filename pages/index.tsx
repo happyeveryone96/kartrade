@@ -7,7 +7,9 @@ import Cards from '@/components/Cards/Cards';
 import { InferGetServerSidePropsType } from 'next';
 import { CardType } from '@/types/card';
 
-export default function Home({data}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export default function Home({
+  data,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const cards = data;
 
   return (
