@@ -17,6 +17,8 @@
 }
 
 .mainImg {
+  object-fit: cover;
+  height: 420px;
   width: 100%;
   vertical-align: middle;
 }
