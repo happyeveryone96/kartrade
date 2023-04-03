@@ -1,16 +1,9 @@
-/* @font-face {
-  font-family: NeueHaasUnica;
-  src: url('/fonts/NeueHaasUnica-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-} */
-
 :root {
   --max-width: 1100px;
   --min-width: 375px;
   --main-width: 25vw;
-  --user-width: 22vw;
-  --user-min-width: 325px;
+  --sub-width: 22vw;
+  --sub-min-width: 325px;
 
   --border: 1px solid #d8d8d8;
   --border-radius: 12px;

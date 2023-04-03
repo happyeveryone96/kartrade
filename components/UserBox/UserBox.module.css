@@ -1,6 +1,6 @@
 .userBox {
-  width: var(--user-width);
-  min-width: var(--user-min-width);
+  width: var(--sub-width);
+  min-width: var(--sub-min-width);
   display: flex;
   justify-content: space-between;
   margin-top: 17.56px;
@@ -26,6 +26,7 @@
 
 .messageBox {
   display: flex;
+  align-items: center;
   margin-top: 17.56px;
   padding-bottom: 15px;
 }
