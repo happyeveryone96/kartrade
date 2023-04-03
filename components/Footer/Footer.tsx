@@ -5,7 +5,7 @@ import css from './Footer.module.css';
 
 function Footer() {
   return (
-    <div className={css.container}>
+    <footer className={css.container}>
       <Image className={css.logo} src={Logo} alt="로고" />
       <div className={css.footerBox}>
         <p>ABOUT US</p>
@@ -16,7 +16,7 @@ function Footer() {
       <p className={css.copyRight}>
         © 2021 KARTRADE LIMITED - ALL RIGHTS RESERVED.
       </p>
-    </div>
+    </footer>
   );
 }
 

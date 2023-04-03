@@ -21,7 +21,6 @@ function CardDetail({
 
   return (
     <div className={css.main}>
-      <Header />
       <Nav />
       <UserBox props={{ userImg: photoCard, userName: nickname }} />
       <CardDetailDesc props={{ title, description, price }} />

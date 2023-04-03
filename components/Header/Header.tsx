@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <div className={css.container}>
+    <header className={css.container}>
       <Link href="/">
         <Image className={css.icon} src={Icon} alt="메인 아이콘" />
       </Link>
@@ -20,7 +20,7 @@ function Header() {
         />
         <Image className={`${css.icon} ${css.menu}`} src={Menu} alt="메뉴" />
       </div>
-    </div>
+    </header>
   );
 }
 
