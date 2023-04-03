@@ -6,7 +6,6 @@
   background-color: white;
   border-top: var(--border);
   border-bottom: var(--border);
-  color: #1a1a1a;
   display: flex;
   gap: 9px;
   align-items: center;
@@ -16,7 +15,7 @@
 
 .home {
   color: #777777;
-  margin: 0 9px;
+  margin-left: 24.5px;
   cursor: pointer;
 }
 
