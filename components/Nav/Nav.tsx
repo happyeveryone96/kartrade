@@ -8,7 +8,7 @@ function Nav() {
   return (
     <div className={css.container}>
       <Link className={css.home} href="/">
-        home
+        Home
       </Link>
       <Image src={Right} alt="화살표" />
       <span className={css.detail}>Card Detail</span>

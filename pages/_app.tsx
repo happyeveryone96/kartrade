@@ -1,6 +1,8 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import localFont from 'next/font/local';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 const neuehaasunica = localFont({
   src: [
@@ -39,8 +41,12 @@ const neuehaasunica = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={neuehaasunica.className}>
-      <Component {...pageProps} />
-    </main>
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <Header />
+      <main className={neuehaasunica.className}>
+        <Component {...pageProps} />
+      </main>
+      <Footer />
+    </div>
   );
 }

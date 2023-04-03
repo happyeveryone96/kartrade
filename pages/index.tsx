@@ -14,11 +14,9 @@ export default function Home({
 
   return (
     <div className={css.main}>
-      <Header />
       <Filter />
       <MainCard />
       <Cards cards={cards} />
-      <Footer />
     </div>
   );
 }
