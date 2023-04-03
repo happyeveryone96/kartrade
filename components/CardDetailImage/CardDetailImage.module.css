@@ -1,10 +1,11 @@
 .cardBox {
-  width: var(--main-width);
-  min-width: var(--min-width);
+  width: var(--sub-width);
+  min-width: var(--sub-min-width);
   border-bottom: var(--border);
 }
 
 .cardImg {
   width: 100%;
+  height: auto;
   margin: 30px 0;
 }
