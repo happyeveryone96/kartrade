@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import PhotoCard from '../../public/photocard/photo1.svg';
+import PhotoCard from '../../public/photocard/main_cover.png';
 import css from '../MainCard/MainCard.module.css';
 
 function MainCard() {

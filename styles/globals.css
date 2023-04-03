@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
   font-family: NeueHaasUnica;
   src: url('/fonts/NeueHaasUnica-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 :root {
   --max-width: 1100px;
@@ -22,23 +22,19 @@
   --title-line-height: 34px;
 
   --detail-title-font-size: 28px;
-  --detail-title-line-height:38px;
+  --detail-title-line-height: 38px;
 
   --desc-font-size: 14px;
   --desc-line-height: 22px;
   --desc-color: #777777;
 
-  --detail-desc-line-height:25px;
+  --detail-desc-line-height: 25px;
 
   --price-font-size: 22px;
   --price-line-height: 34px;
 
   --nav-font-size: 13px;
   --nav-line-height: 26px;
-
-  /*--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',*/
-  /*  'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',*/
-  /*  'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;*/
 }
 
 * {
@@ -50,7 +46,7 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: NeueHassUnica;
+  /* font-family: NeueHassUnica; */
 
   margin: 0 auto;
   max-width: var(--max-width);

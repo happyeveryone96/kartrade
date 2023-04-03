@@ -7,7 +7,9 @@
 }
 
 .cardImg {
+  object-fit: cover;
   width: 100%;
+  height: auto;
   cursor: pointer;
   vertical-align: middle;
 }
