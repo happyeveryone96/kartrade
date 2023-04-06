@@ -1,19 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
-import Top from '../../public/icons/top.png';
 import css from './ScrollToTop.module.css';
-import Circle from '../../public/icons/circle.png';
+import ScrollIcon from '../../public/icons/top-scroll-icon.svg';
 
 const ScrollToTop = () => {
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
-    <div className={css.container} onClick={scrollToTop}>
-      <Image className={css.scrollToTop} src={Top} alt="상단으로 이동" />
-      <Image className={css.circle} src={Circle} alt="버튼 테두리" />
-    </div>
+    <Image
+      onClick={scrollToTop}
+      className={css.scrollToTop}
+      src={ScrollIcon}
+      alt="상단으로 이동"
+    />
   );
 };
 
