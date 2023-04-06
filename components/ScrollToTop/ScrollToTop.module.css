@@ -1,0 +1,7 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  left: calc(50vw + 128.5px);
+  cursor: pointer;
+  z-index: 11;
+}

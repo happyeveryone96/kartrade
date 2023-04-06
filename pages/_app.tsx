@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import localFont from 'next/font/local';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 
 const neuehaasunica = localFont({
   src: [
@@ -41,9 +42,17 @@ const neuehaasunica = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div
+      className={neuehaasunica.className}
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
+      <ScrollToTop />
       <Header />
-      <main className={neuehaasunica.className}>
+      <main>
         <Component {...pageProps} />
       </main>
       <Footer />

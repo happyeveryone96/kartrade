@@ -1,8 +1,6 @@
 import MainCard from '@/components/MainCard/MainCard';
 import Filter from '@/components/Filter/Filter';
-import Header from '@/components/Header/Header';
 import css from '../styles/Home.module.css';
-import Footer from '@/components/Footer/Footer';
 import Cards from '@/components/Cards/Cards';
 import { InferGetServerSidePropsType } from 'next';
 import { CardType } from '@/types/card';
