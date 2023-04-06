@@ -9,11 +9,11 @@ interface Props {
 const Cards: React.FC<Props> = ({ cards }) => {
   return (
     <>
-      {cards.map(card => (
+      {cards.map((card) => (
         <Card key={card.id} card={card} />
       ))}
     </>
   );
-}
+};
 
 export default Cards;

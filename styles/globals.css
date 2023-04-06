@@ -39,8 +39,6 @@
 html,
 body {
   overflow-x: hidden;
-  /* font-family: NeueHassUnica; */
-
   margin: 0 auto;
   max-width: var(--max-width);
 }
