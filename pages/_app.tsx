@@ -43,6 +43,7 @@ const neuehaasunica = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
+      className={neuehaasunica.className}
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -51,7 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <ScrollToTop />
       <Header />
-      <main className={neuehaasunica.className}>
+      <main>
         <Component {...pageProps} />
       </main>
       <Footer />
