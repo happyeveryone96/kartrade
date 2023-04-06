@@ -4,7 +4,7 @@
 
 .scrollToTop {
   position: fixed;
-  top: 615px;
+  bottom: 125px;
   left: calc(50vw + 128.5px);
   background-color: white;
   z-index: 11;
@@ -12,7 +12,7 @@
 
 .circle {
   position: fixed;
-  top: 600px;
+  bottom: 110px;
   left: calc(50vw + 112.5px);
   background-color: white;
   width: 50px;
