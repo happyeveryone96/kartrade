@@ -12,3 +12,10 @@
   padding: 0 30px 0 0;
   margin-top: 80px;
 }
+
+.sortBox {
+  border: 0;
+  outline: none;
+  font-family: Neue Haas Unica;
+  font-size: 13px;
+}
