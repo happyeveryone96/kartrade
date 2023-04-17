@@ -2,7 +2,7 @@ import React from 'react';
 import css from './Sort.module.css';
 import { useRouter } from 'next/router';
 
-type PriceSort = 'default' | 'lowToHigh' | 'highToLow'
+type PriceSort = 'default' | 'lowToHigh' | 'highToLow';
 
 const Sort: React.FC = () => {
   const router = useRouter();

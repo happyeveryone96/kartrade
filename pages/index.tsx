@@ -22,7 +22,7 @@ export default function Home({
 export async function getServerSideProps(context: any) {
   const { price } = context.query;
   const res = await fetch(`http://localhost:3000/api/cards?sort=${price}`);
-  let data: CardType[] = await res.json();
+  const data: CardType[] = await res.json();
 
   return { props: { data } };
 }
