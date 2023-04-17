@@ -117,5 +117,13 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<CardType[]>
 ) {
+  const priceSort = req.query.sort as string;
+
+  if (priceSort === 'lowToHigh') {
+    dummyCardInfo.sort((a, b) => a.price - b.price);
+  } else if (priceSort === 'highToLow') {
+    dummyCardInfo.sort((a, b) => b.price - a.price);
+  }
+
   res.status(200).json(dummyCardInfo);
 }
